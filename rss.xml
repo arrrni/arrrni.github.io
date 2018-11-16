@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Arrrni's Blog on Github Pages]]></title><description><![CDATA[A personal blog about coding and technologies used in web development.]]></description><link>https://arrrni.github.io/</link><generator>RSS for Node</generator><lastBuildDate>Fri, 16 Nov 2018 09:37:21 GMT</lastBuildDate><item><title><![CDATA[Test post number one.]]></title><description><![CDATA[This is some kind of testing new architecture based on Markdown fetching with Gatsby.   What can i do with that? Well, you can so do so much…]]></description><link>https://arrrni.github.io//test-post/</link><guid isPermaLink="false">https://arrrni.github.io//test-post/</guid><pubDate>Fri, 16 Nov 2018 08:12:37 GMT</pubDate><content:encoded>&lt;article class=&quot;message is-info&quot;&gt;
+  &lt;div class=&quot;message-header&quot;&gt;
+    &lt;p&gt;Information&lt;/p&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;message-body&quot;&gt;
+    This post was done as a proof of concept that GatsbyJS with Markdown works properly on Github Pages. Page is in &lt;strong&gt;development&lt;/strong&gt; state.
+  &lt;/div&gt;
+&lt;/article&gt;
+&lt;p&gt;This is some kind of testing new architecture based on Markdown fetching with Gatsby.  &lt;/p&gt;
+&lt;h2&gt;What can i do with that?&lt;/h2&gt;
+&lt;p&gt;Well, you can so do so much things. First we need to find some Markdown editor to make blogging easier. I found some online tool named &lt;a href=&quot;https://stackedit.io&quot;&gt;Stackedit.io&lt;/a&gt;. It feels easy and suitable for all my needs.&lt;/p&gt;
+&lt;p&gt;Second, you can embed pretty much everything with this setup.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;## you can embed your code too!&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;   &lt;img src=&quot;http://nzpalms.co.nz/communities/6/004/013/479/236//images/4630126545.jpg&quot; alt=&quot;Palms can be embedded too.&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Youtube video works as well.&lt;/p&gt;
+&lt;div&gt;
+          &lt;div
+            class=&quot;gatsby-resp-iframe-wrapper&quot;
+            style=&quot;padding-bottom: 56.25%; position: relative; height: 0; overflow: hidden;margin-bottom: 1.0725rem&quot;
+          &gt;
+            &lt;iframe src=&quot;https://www.youtube.com/embed/hTWKbfoikeg&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen style=&quot;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          &quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          &lt;/div&gt;</content:encoded></item></channel></rss>
