@@ -9,12 +9,11 @@ import {
     NavbarLink,
     NavbarDropdown,
     NavbarDivider,
-    NavbarEnd,
-    Field,
-    Control,
-    Button,
-    Icon
+    NavbarEnd
 } from 'bloomer';
+import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
 class MainNavbar extends React.Component {
     constructor(props) {
@@ -34,47 +33,29 @@ class MainNavbar extends React.Component {
             <Navbar className="is-black">
                 <NavbarBrand>
                     <NavbarItem>
-                        <span style={{fontSize: '1.3rem'}}>Arrrni's home</span>
-                    </NavbarItem>
-                    <NavbarItem isHidden='desktop'>
-                        <Icon className='fa fa-github'/>
-                    </NavbarItem>
-                    <NavbarItem isHidden='desktop'>
-                        <Icon className='fa fa-twitter' style={{color: '#55acee'}}/>
+                        <Link to="/" style={{fontSize: '1.3rem', color: 'white'}}>Arrrni's Blog</Link>
                     </NavbarItem>
                     <NavbarBurger isActive={this.state.isActive} onClick={this.onClickNav}/>
                 </NavbarBrand>
                 <NavbarMenu isActive={this.state.isActive} onClick={this.onClickNav}>
                     <NavbarStart>
-                        <NavbarItem href='#/'>Home</NavbarItem>
+                        <NavbarItem><Link to="/" style={{color: 'white'}}>Home</Link></NavbarItem>
                         <NavbarItem hasDropdown isHoverable>
-                            <NavbarLink href='#/documentation'>Documentation</NavbarLink>
+                            <NavbarLink href='#/documentation'>Categories</NavbarLink>
                             <NavbarDropdown>
-                                <NavbarItem href='#/'>One A</NavbarItem>
-                                <NavbarItem href='#/'>Two B</NavbarItem>
+                                <NavbarItem href='#/'>There will be some</NavbarItem>
+                                <NavbarItem href='#/'>Categories</NavbarItem>
                                 <NavbarDivider/>
-                                <NavbarItem href='#/'>Two A</NavbarItem>
+                                <NavbarItem href='#/'>In near future</NavbarItem>
                             </NavbarDropdown>
                         </NavbarItem>
                     </NavbarStart>
                     <NavbarEnd>
-                        <NavbarItem href="https://github.com/AlgusDark/bloomer" isHidden='touch'>
-                            <Icon className='fa fa-github'/>
+                        <NavbarItem href="https://github.com/arrrni" isHidden='touch'>
+                            <FontAwesomeIcon icon={faGithub}/>
                         </NavbarItem>
-                        <NavbarItem href="https://twitter.com/AlgusDark" isHidden='touch'>
-                            <Icon className='fa fa-twitter' style={{color: '#55acee'}}/>
-                        </NavbarItem>
-                        <NavbarItem>
-                            <Field isGrouped>
-                                <Control>
-                                    <Button id="twitter" data-social-network="Twitter" data-social-action="tweet"
-                                            data-social-target="http://bloomer.js.org" target="_blank" href="https://twitter.com/intent/tweet?text=bloomer:
-                    a set of React Stateless Components for bulma.io&amp;url=http://bloomer.js.org&amp;via=AlgusDark">
-                                        <Icon className="fa fa-twitter"/>
-                                        <span>Tweet</span>
-                                    </Button>
-                                </Control>
-                            </Field>
+                        <NavbarItem href="https://twitter.com/arnoldziq" isHidden='touch'>
+                            <FontAwesomeIcon icon={faTwitter} style={{color: '#FFFFFF'}}/>
                         </NavbarItem>
                     </NavbarEnd>
                 </NavbarMenu>
