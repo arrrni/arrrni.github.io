@@ -13,7 +13,7 @@ import {
 } from 'bloomer';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faTwitter, faLinkedinIn } from '@fortawesome/free-brands-svg-icons';
 
 class MainNavbar extends React.Component {
     constructor(props) {
@@ -53,6 +53,9 @@ class MainNavbar extends React.Component {
                     <NavbarEnd>
                         <NavbarItem href="https://github.com/arrrni" isHidden='touch'>
                             <FontAwesomeIcon icon={faGithub}/>
+                        </NavbarItem>
+                        <NavbarItem href="https://www.linkedin.com/in/artur-szymczyk/" isHidden='touch'>
+                            <FontAwesomeIcon icon={faLinkedinIn} style={{color: '#FFFFFF'}}/>
                         </NavbarItem>
                         <NavbarItem href="https://twitter.com/arnoldziq" isHidden='touch'>
                             <FontAwesomeIcon icon={faTwitter} style={{color: '#FFFFFF'}}/>
