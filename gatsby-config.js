@@ -5,7 +5,7 @@ module.exports = {
     description: 'A personal blog about coding and technologies used in web development.',
     siteUrl: 'https://arrrni.github.io/',
   },
-  pathPrefix: "/arrrni.github.io",
+  pathPrefix: "/",
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
