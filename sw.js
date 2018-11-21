@@ -26,17 +26,17 @@ workbox.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-cde4c8b2582df7ecff85.js"
+    "url": "webpack-runtime-73f6ab0cac607bb9a5ea.js"
   },
   {
-    "url": "app-a29e0796f4c65d26d7ca.js"
+    "url": "app-c469dd8006a47d408808.js"
   },
   {
     "url": "component---node-modules-gatsby-plugin-offline-app-shell-js-fcf9b870675ab4386cae.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "258a690fdf08b25a21595ef1b9af475a"
+    "revision": "40ffab52043a35ce0b2ccaeac77d1bc2"
   },
   {
     "url": "1.22274648f31374b2ee57.css"
@@ -48,7 +48,7 @@ self.__precacheManifest = [
     "url": "component---src-pages-404-js-37295a3ae44bcfb796a5.js"
   },
   {
-    "url": "0-fe2eb699eb4c77862347.js"
+    "url": "0-b97e875bb85a8f667aa6.js"
   },
   {
     "url": "static/d/164/path---404-html-516-62a-NZuapzHg3X9TaN1iIixfv1W23E.json",
@@ -66,7 +66,7 @@ self.__precacheManifest = [
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/arrrni.github.io/offline-plugin-app-shell-fallback/index.html", {
+workbox.routing.registerNavigationRoute("/offline-plugin-app-shell-fallback/index.html", {
   whitelist: [/^([^.?]*|[^?]*\.([^.?]{5,}|html))(\?.*)?$/],
   blacklist: [/\?(.+&)?no-cache=1$/],
 });
