@@ -3,15 +3,10 @@ import {Menu, MenuLabel, MenuList, MenuLink} from 'bloomer';
 
 const SideMenu = () => (
     <Menu>
-        <MenuLabel>Main</MenuLabel>
-        <MenuList>
-            <li><MenuLink>What is this?</MenuLink></li>
-            <li><MenuLink>There will be something soon</MenuLink></li>
-        </MenuList>
         <MenuLabel>FAQ</MenuLabel>
         <MenuList>
-            <li><MenuLink>What is this?</MenuLink></li>
-            <li><MenuLink>There will be something soon</MenuLink></li>
+            <li><MenuLink>Who am I?</MenuLink></li>
+            <li><MenuLink>What is this site for?</MenuLink></li>
         </MenuList>
     </Menu>
 );

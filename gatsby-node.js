@@ -2,6 +2,20 @@ const _ = require('lodash')
 const Promise = require('bluebird')
 const path = require('path')
 const { createFilePath } = require('gatsby-source-filesystem')
+const { NavItem } = require('bloomer/lib/components/Nav/NavItem')
+
+function dedupeCategories(allMarkdownRemark) {
+  const uniqueCategories = new Set()
+  // Iterate over all articles
+  allMarkdownRemark.edges.forEach(({ node }) => {
+    // Iterate over each category in an article
+    node.frontmatter.categories.forEach(category => {
+      uniqueCategories.add(category)
+    })
+  })
+  // Create new array with duplicates removed
+  return Array.from(uniqueCategories)
+}
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -15,11 +29,13 @@ exports.createPages = ({ graphql, actions }) => {
             allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, limit: 1000) {
               edges {
                 node {
+                  id
                   fields {
                     slug
                   }
                   frontmatter {
                     title
+                    categories
                   }
                 }
               }
@@ -46,6 +62,26 @@ exports.createPages = ({ graphql, actions }) => {
               slug: post.node.fields.slug,
               previous,
               next,
+            },
+          })
+        })
+
+        // Create array of every category without duplicates
+        const dedupedCategories = dedupeCategories(result.data.allMarkdownRemark)
+        // Iterate over categories and create page for each
+        dedupedCategories.forEach(category => {
+          createPage({
+            path: `category/${category}`,
+            component: path.resolve("./src/templates/category-page.js"),
+            // Create props for our category-page.js component
+            context: {
+              category,
+              // Create an array of ids of articles in this category
+              ids: result.data.allMarkdownRemark.edges
+                .filter(({ node }) => {
+                  return node.frontmatter.categories.includes(category)
+                })
+                .map(({node}) => node.id),
             },
           })
         })

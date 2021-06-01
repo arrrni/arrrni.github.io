@@ -1,6 +1,8 @@
 ---
 title: Test post number one.
 date: "2018-11-16T08:12:37.121Z"
+slug: test-post
+categories: ['Development']
 ---
 
 <article class="message is-info">

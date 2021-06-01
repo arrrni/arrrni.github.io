@@ -29,6 +29,12 @@ class BlogPostTemplate extends React.Component {
         </div>
         <div className="content" dangerouslySetInnerHTML={{ __html: post.html }} />
         <hr/>
+        {post.frontmatter.categories.map(category => 
+        <Link to={`/category/${category}`}>
+          <span class="tag">{category}</span>
+        </Link>
+        )}
+        <hr/>
         <Bio />
 
         <ul
@@ -78,6 +84,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        categories
         date(formatString: "MMMM DD, YYYY")
       }
     }
