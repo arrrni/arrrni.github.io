@@ -20,8 +20,8 @@ This is some kind of testing new architecture based on Markdown fetching with Ga
 
   
 
-Well, you can so do so much things. First we need to find some Markdown editor to make blogging easier. I found some online tool named [Stackedit.io](https://stackedit.io). It feels easy and suitable for all my needs.
-
+Well, you can so do so many things. First, we need to find some Markdown editor to make blogging easier. I found an online tool named [Stackedit.io](https://stackedit.io). It feels easy and suitable for all my needs.
+ 
 Second, you can embed pretty much everything with this setup.
 
     ## you can embed your code too!
